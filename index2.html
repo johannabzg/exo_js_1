@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>demojs1</title>
+  </head>
+  <body>
+
+           <form>
+               <label for="nom">Nom : </label><input type="text" name="nom" id="nom"/>
+               <label for="prenom">Prénom : </label><input type="text" name="prenom" id="prenom"/>
+               <label for="ville">Ville : </label><input type="text" name="ville" id="ville"/>
+               <button onclick="test()" type="submit" name="valider" id="valider">Valider</button>
+           </form>
+
+           <form>
+                  <label for="premier_nombre">Premier nombre : </label><input type="text" id="premier_nombre" name="premier_nombre"/><br/>
+                  <label for="deuxieme_nombre">Deuxième nombre : </label><input type="text" id="deuxieme_nombre" name="deuxieme_nombre"/><br/>
+                  <button onclick="exo2()" id="valider" name ="valider">Valider</button>
+           </form>
+
+           <form>
+                 <label for="pointure">Pointure : </label><input type="text" id="pointure" name="pointure"/><br/>
+                 <label for="annee">Année de naissance : </label><input type="text" id="annee" name="annee"/><br/>
+                 <button onclick="calcul()" id="valider" name="valider">Valider</button>
+           </form>
+           <form>
+                 <label for="age">Votre âge : </label><input type="text" id="nbe" name="age"/><br/>
+                 <button onclick="age4()" id="valider" name="valider">Valider</button>
+           </form>
+
+    <script>
+     ///////////////////exo 2
+    /*  var personnes = ["nom: Marie,\nprenom: Jeanne,\nville: Toulouse"]
+      alert (personnes) */
+     //////////////////exo 3 et 4
+     function test(){
+                  var nom = document.getElementById("nom").value;
+                  var prenom = document.getElementById("prenom").value;
+                  var ville = document.getElementById("ville").value;
+                  alert('Nom: '+ nom + '\n' + 'Prenom: ' + prenom + '\n' + 'Ville: ' + ville);
+              };
+     ////////////////// exo 5
+
+      function exo2() {
+      var premier_nombre = document.getElementById("premier_nombre").value;
+      var deuxieme_nombre =  document.getElementById("deuxieme_nombre").value;
+      var resultat = parseInt(premier_nombre) * deuxieme_nombre
+      alert ("si on multiplies les entiers, cela donne : "+resultat)
+    };
+     /////////////////exo 7
+     function calcul(){
+       var pointure = document.getElementById("pointure").value;
+       var annee = document.getElementById("annee").value;
+       var resultat = pointure * 2 + 5 *50 - année + 1760;
+       alert (resultat);
+     };
+    //////////////////exo 8
+
+    function age4() {
+      var age = document.getElementById("nbe").value;
+    if (age >= 18) {
+      alert('vous ête mageur ! bravo !');
+    }
+    else {
+      alert('vous ête mineur !');
+    }
+};
+    </script>
+    <!-- exo 6 -->
+    <button type="button" onclick="resteNb();">%</button>
+
+  </body>
+</html>
